@@ -86,7 +86,7 @@ class DnsTester(object):
 
             dns_result = self.dns_single_lookup(dns_target)
 
-            if dns_result:
+            if dns_result is not False:
 
                 # summarise result for log
                 result_str = ' {}: {}ms'.format(dns_target, dns_result)
